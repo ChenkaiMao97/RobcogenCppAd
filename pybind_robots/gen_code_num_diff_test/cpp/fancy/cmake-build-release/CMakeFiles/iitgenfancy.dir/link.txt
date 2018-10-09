@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC -g -std=c++11 -Wall -O3 -march=native -mtune=native -D EIGEN_NO_DEBUG -O3 -DNDEBUG  -shared -Wl,-soname,libiitgenfancy.so -o libiitgenfancy.so CMakeFiles/iitgenfancy.dir/miscellaneous.cpp.o 

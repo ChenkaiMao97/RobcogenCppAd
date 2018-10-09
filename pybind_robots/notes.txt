@@ -1,6 +1,0 @@
-Notes:
-
-Step 1. Create your robot
-Step 2. Edit the CMakeLists.txt if necessary to build an executable for that robot
-Step 3. Include the correct headers
-
