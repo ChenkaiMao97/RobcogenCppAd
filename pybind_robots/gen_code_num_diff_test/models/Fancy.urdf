@@ -1,0 +1,74 @@
+<robot name="Fancy">
+    <link name="FancyBase">
+    </link>
+    <link name="link1">
+        <inertial>
+            <origin xyz="0.50000 0.00000 0.00000"/>
+            <mass value="1.00000"/>
+            <inertia ixx="0.00250" iyy="0.08458" izz="0.08458" ixy="-0.00000" ixz="-0.00000" iyz="-0.00000"/>
+        </inertial>
+    </link>
+    <link name="link2">
+        <inertial>
+            <origin xyz="0.00000 0.00000 0.50000"/>
+            <mass value="1.00000"/>
+            <inertia ixx="0.08458" iyy="0.08458" izz="0.00250" ixy="-0.00000" ixz="-0.00000" iyz="-0.00000"/>
+        </inertial>
+    </link>
+    <link name="link3">
+        <inertial>
+            <origin xyz="0.50000 0.00000 0.00000"/>
+            <mass value="1.00000"/>
+            <inertia ixx="0.00250" iyy="0.08458" izz="0.08458" ixy="-0.00000" ixz="-0.00000" iyz="-0.00000"/>
+        </inertial>
+    </link>
+    <link name="link4">
+        <inertial>
+            <origin xyz="0.00000 0.00000 0.50000"/>
+            <mass value="1.00000"/>
+            <inertia ixx="0.08458" iyy="0.08458" izz="0.00250" ixy="-0.00000" ixz="-0.00000" iyz="-0.00000"/>
+        </inertial>
+    </link>
+    <link name="link5">
+        <inertial>
+            <origin xyz="0.50000 0.00000 0.00000"/>
+            <mass value="1.00000"/>
+            <inertia ixx="0.00250" iyy="0.08458" izz="0.08458" ixy="-0.00000" ixz="-0.00000" iyz="-0.00000"/>
+        </inertial>
+    </link>
+    <joint name="jA" type="revolute">
+        <origin xyz="0.00000 0.00000 0.00000" rpy="0.0 0.0 0.0"/>
+        <parent link="FancyBase"/>
+        <child  link="link1"/>
+        <limit effort="30" velocity="1.0"/>
+        <axis xyz="0 0 1"/>
+    </joint>
+    <joint name="jB" type="prismatic">
+        <origin xyz="ee_x 0.00000 0.00000" rpy="-1.5707963705062866 0.0 -0.0"/>
+        <parent link="link1"/>
+        <child  link="link2"/>
+        <limit effort="30" velocity="1.0"/>
+        <axis xyz="0 0 1"/>
+    </joint>
+    <joint name="jC" type="revolute">
+        <origin xyz="0.00000 0.00000 1.00000" rpy="0.0 0.0 0.0"/>
+        <parent link="link2"/>
+        <child  link="link3"/>
+        <limit effort="30" velocity="1.0"/>
+        <axis xyz="0 0 1"/>
+    </joint>
+    <joint name="jD" type="prismatic">
+        <origin xyz="1.00000 0.00000 0.00000" rpy="1.5707963705062866 -0.0 0.0"/>
+        <parent link="link3"/>
+        <child  link="link4"/>
+        <limit effort="30" velocity="1.0"/>
+        <axis xyz="0 0 1"/>
+    </joint>
+    <joint name="jE" type="revolute">
+        <origin xyz="0.00000 0.00000 1.00000" rpy="0.0 0.0 0.0"/>
+        <parent link="link4"/>
+        <child  link="link5"/>
+        <limit effort="30" velocity="1.0"/>
+        <axis xyz="0 0 1"/>
+    </joint>
+</robot>

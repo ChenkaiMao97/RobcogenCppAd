@@ -1,0 +1,4 @@
+/home/csg/Programs/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/csg/Desktop/robcogen-0.4ad.0/run/gen_code/cpp/fancy
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/csg/Desktop/robcogen-0.4ad.0/run/gen_code/cpp/fancy/cmake-build-debug
